@@ -7,25 +7,9 @@ import Register from './components/Register';
 
 function App() {
   return (
-    // <Router>
-    //   <div className="App">
-    //     <Header />
-    //     <Routes>
-    //       <Route path="/" element={<ProductContainer />} />
-    //     </Routes>
-    //   </div>
-    // </Router>
-    // <div>
-    //   <ProductContainer />
-    // </div>
     <Router>
       <div className="App">
         <Navbar/>
-        {/* <nav>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/login">Login</NavLink>
-            <NavLink to="/register">Register</NavLink>
-        </nav> */}
         <Routes>
           <Route path="/" element={<ProductContainer />} />
           <Route path="/login" element={<Login />} />

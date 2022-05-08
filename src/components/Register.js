@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-// import './Register.css'
 
 function Register() {
   const [email, setEmail] = useState('');
@@ -42,18 +41,13 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // const newUser = {
-    //   email: email,
-    //   name: name,
-    //   password: password,
-    //   address: address,
-    //   joinDate: joinDate,
-    //   phoneNumber: phoneNumber,
-    // };
     const newUser = {
       email: email,
       name: name,
       password: password,
+      address: address,
+      joinDate: joinDate,
+      phoneNumber: phoneNumber,
     };
     handleAddUser(newUser);
     setEmail('');
@@ -87,7 +81,7 @@ function Register() {
           <span>password: </span>
           <input type="password" value={password} onChange={handlePassword} />
         </label>
-        {/* <label>
+        <label>
           <span>address: </span>
           <input type="text" value={address} onChange={handleAddress} />
         </label>
@@ -98,7 +92,7 @@ function Register() {
         <label>
           <span>phone number: </span>
           <input type="number" value={phoneNumber} onChange={handlePhoneNumber} />
-        </label> */}
+        </label>
         <button>Add</button>
       </form>
     </div>

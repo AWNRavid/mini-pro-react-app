@@ -16,7 +16,6 @@ function Main() {
       .get('http://localhost:3000/products')
       .then((response) => {
         if (response.data.length > 0) {
-          // console.log(response.data);
           setProducstList(response.data);
         }
       })
@@ -97,7 +96,6 @@ function Main() {
       {producstList.map((product) => {
         return (
           <div key={product.id}>
-            {/* <p>id : {product.id}</p> */}
             <p>name: {product.name}</p>
             <p>quantity: {product.quantity}</p>
             <p>price: {product.price}</p>

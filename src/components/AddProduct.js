@@ -35,7 +35,6 @@ function AddProduct({ handleAddProduct }) {
         name: productName,
         quantity: productQuantity,
         price: productPrice,
-        // pics: 'https://picsum.photos/200'
       };
       handleAddProduct(newProduct);
       setProductName('');

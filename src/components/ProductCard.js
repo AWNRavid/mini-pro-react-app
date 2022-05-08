@@ -1,4 +1,4 @@
-import { toBeInTheDocument } from '@testing-library/jest-dom/dist/matchers';
+
 import React, { useEffect, useState } from 'react';
 
 function ProductCard({ product, handleDeleteProduct, handleEditProduct }) {
@@ -6,7 +6,7 @@ function ProductCard({ product, handleDeleteProduct, handleEditProduct }) {
   const [productName, setProductName] = useState('');
   const [productQuantity, setProductQuantity] = useState(0);
   const [productPrice, setProductPrice] = useState(0);
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   // const url = url
 
   useEffect(() => {
@@ -101,6 +101,7 @@ function ProductCard({ product, handleDeleteProduct, handleEditProduct }) {
             ) : (
               <>
                 <p>belum login</p>
+                <h1>belum login woiiii</h1>
               </>
             )}
           </div>
@@ -111,24 +112,3 @@ function ProductCard({ product, handleDeleteProduct, handleEditProduct }) {
 }
 
 export default ProductCard;
-
-{
-  /* <h2>{product.name}</h2>
-        <p>{product.quantity}</p>
-        <p>{product.price}</p>
-        <button onClick={updateProduct}>Edit</button>
-        <button onClick={deleteProduct}>Delete</button> */
-}
-
-// https://picsum.photos/id/{Math.floor(Math.random()*100)}/200/
-
-{
-  /* <div>
-            <h2>{product.name}</h2>
-            <p>{product.quantity}</p>
-            <p>{product.price}</p>
-            <img src="https://picsum.photos/id/237/200/" alt="" srcset="" />
-            <button onClick={handleEdit}>Edit</button>
-            <button onClick={deleteProduct}>Delete</button>
-          </div> */
-}

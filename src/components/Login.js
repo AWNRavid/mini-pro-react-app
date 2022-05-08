@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-// import './Login.css';
-import ProductContainer from './ProductContainer';
-import { Redirect } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
